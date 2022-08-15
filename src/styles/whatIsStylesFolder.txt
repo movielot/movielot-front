@@ -1,0 +1,6 @@
+1. sass 사용시
+ reset.scss => css 초기화
+ common.scss => 공통으로 사용하는 css 속성 정의
+2. styled component사용 시
+ GlobalStyle.js => css 초기화
+ theme.js => 공통으로 사용하는 css 속성 정의
