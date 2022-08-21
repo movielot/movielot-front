@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import 'antd/dist/antd.min.css';
 import './App.css';
 import { UserOutlined } from '@ant-design/icons';
-import { Breadcrumb, Layout, Menu } from 'antd';
+import { Breadcrumb, Layout, Menu, Typography } from 'antd';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Movie from './pages/movie/Movie';
 
 const { Header, Content, Sider } = Layout;
+const { Title } = Typography;
 
 // TODO. to be fixed later.
 const menus = [
@@ -119,7 +120,9 @@ const App = () => {
                     padding: 10,
                   }}
                 >
-                  <Breadcrumb.Item>{currentMenu}</Breadcrumb.Item>
+                  <Breadcrumb.Item>
+                    <Title level={4}>{currentMenu}</Title>
+                  </Breadcrumb.Item>
                 </Breadcrumb>
                 <Routes>
                   <Route path="/" element={<Movie />} />

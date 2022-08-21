@@ -1,12 +1,18 @@
 import React from 'react';
-import { Card, Image, Typography } from 'antd';
+import { Card, Typography } from 'antd';
 
 function MovieCard({ movie }) {
   const imagePath = 'https://image.tmdb.org/t/p/original/';
   console.log(movie);
   return (
     <div className="movie-card-wrapper">
-      <Card title={<Image src={imagePath + movie.poster_path} />}>
+      <Card
+        title={
+          <div className="image-wrapper" onClick={() => alert('hoho~')}>
+            <img src={imagePath + movie.poster_path} />
+          </div>
+        }
+      >
         <Typography.Text ellipsis>{movie.title}</Typography.Text>
         <p>
           <Typography.Text ellipsis>
