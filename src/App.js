@@ -78,7 +78,10 @@ const App = () => {
         <Layout>
           <Header className="header">
             {/* TODO. plz icon here! */}
-            <div className="logo">MOVIELOT</div>
+            <div className="logo">
+              <img src={`${process.env.PUBLIC_URL}/logo.png`} width="30"/>
+              MOVIELOT
+            </div>
             <Menu
               theme="dark"
               mode="horizontal"
