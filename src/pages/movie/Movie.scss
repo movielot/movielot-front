@@ -1,0 +1,36 @@
+.movie-wrapper {
+  .movie-card-wrapper {
+    display: inline-block;
+
+    .ant-card {
+      width: 300px;
+      margin-bottom: 15px;
+      margin-right: 15px;
+      display: inline-block;
+
+      .ant-card-head {
+        img {
+          width: 250px;
+          height: 375px;
+          border-radius: 7px;
+          cursor: pointer;
+          transition: .5s ease;
+
+          &:hover {
+            opacity: 0.3;
+          }
+        }
+      }
+
+      .ant-card-body {
+        padding-bottom: 12px;
+      }
+    }
+  }
+
+  .movie-pagination {
+    width: 100%;
+    justify-content: center;
+    margin-top: 12px;
+  }
+}
